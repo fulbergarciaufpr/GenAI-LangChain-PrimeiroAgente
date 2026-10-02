@@ -11,9 +11,15 @@ llm = ChatGroq(
     temperature  = 0.7
 )
 
-prompt = "Olá! Como vai você?"
-print("Usuário:" + prompt + "\n")
-llm_answer = llm.invoke(prompt)
+prompt = ""
+while (True):
+  prompt = input("Usuário: ")
+  prompt = prompt.lower()
 
-print("Classe de retorno:", type(llm_answer), "\n")
-print("Mensagem de retorno:\n" + llm_answer.content)
+  if (prompt == "sair" or prompt == "exit"):
+    break
+
+  llm_answer = llm.invoke(prompt)
+  edit_content = llm_answer.content.replace("\n\n", "\n").replace("\n", "\n     ")
+  edit_content = "\nLLM: " + edit_content + "\n"
+  print(edit_content)
