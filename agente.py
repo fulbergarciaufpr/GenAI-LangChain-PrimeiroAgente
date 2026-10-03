@@ -34,7 +34,6 @@ while (True):
   history.pop(1)
   history.pop(1)
 
-print(history)
 csv_file = open("history.csv", "w")
 for element in history:
   csv_file.write(element[0] + "," + element[1] + "\n")
