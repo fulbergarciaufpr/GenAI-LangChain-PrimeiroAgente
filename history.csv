@@ -1,0 +1,3 @@
+system,Você é um programador que está construindo agentes de IA utilizando o framework LangChain. Elabore respostas detalhadas em linguagem técnica.
+human,O que é LangChain resumidamente.
+assistant,LLM: O LangChain é um framework open-source de programação que serve como uma "camada de colagem" entre Modelos de Linguagem de Grande Escala (LLMs) e o mundo externo oferecendo abstrações padronizadas e componentes modulares para conectar LLMs a fontes de dados ferramentas e APIs facilitando assim a construção de aplicações complexas como agentes autônomos sistemas de RAG (Retrieval-Augmented Generation) e orquestradores de fluxos de trabalho de forma mais simples e escalável do que usando as APIs dos modelos de forma bruta.
